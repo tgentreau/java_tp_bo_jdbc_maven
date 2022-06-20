@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><pains xmlns="http://www.example.org/stagiaires" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/individus individus.xsd">
+                            
+    
+    
+    
+    
+    
+    <pain>
+                                                        
+        
+        
+        
+        
+        
+        <id>1</id>
+                                                        
+        
+        
+        
+        
+        
+        <libelle>pain tradition</libelle>
+                                                        
+        
+        
+        
+        
+        
+        <marque>Boulangerie Ducoin</marque>
+                                                        
+        
+        
+        
+        
+        
+        <poid>400</poid>
+                                                        
+        
+        
+        
+        
+        
+        <prixUnitaire>2.0</prixUnitaire>
+                                                        
+        
+        
+        
+        
+        
+        <stock>100</stock>
+                                                        
+        
+        
+        
+        
+        
+        <duréeConservation>100</duréeConservation>
+                                                    
+    
+    
+    
+    
+    
+    </pain>
+                        
+    
+    
+    
+    
+    
+    <pain>
+                                                
+        
+        
+        
+        
+        <id>2</id>
+                                                
+        
+        
+        
+        
+        <libelle>baguette ordinaire</libelle>
+                                                
+        
+        
+        
+        
+        <marque>Boulangerie Ducoin</marque>
+                                                
+        
+        
+        
+        
+        <poid>250</poid>
+                                                
+        
+        
+        
+        
+        <prixUnitaire>0.8</prixUnitaire>
+                                                
+        
+        
+        
+        
+        <stock>800</stock>
+                                                
+        
+        
+        
+        
+        <duréeConservation>800</duréeConservation>
+                                            
+    
+    
+    
+    
+    </pain>
+                    
+    
+    
+    
+    
+    <pain>
+                                        
+        
+        
+        
+        <id>3</id>
+                                        
+        
+        
+        
+        <libelle>Test</libelle>
+                                        
+        
+        
+        
+        <marque>Boulangerie Ducoin</marque>
+                                        
+        
+        
+        
+        <poid>400</poid>
+                                        
+        
+        
+        
+        <prixUnitaire>1.5</prixUnitaire>
+                                        
+        
+        
+        
+        <stock>600</stock>
+                                        
+        
+        
+        
+        <duréeConservation>600</duréeConservation>
+                                    
+    
+    
+    
+    </pain>
+                
+
+
+
+    <pain>
+        <id>4</id>
+        <libelle>petit pain</libelle>
+        <marque>Boulangerie Ducoin</marque>
+        <poid>400</poid>
+        <prixUnitaire>1.5</prixUnitaire>
+        <stock>600</stock>
+        <duréeConservation>600</duréeConservation>
+    </pain>
+</pains>

@@ -1,11 +1,8 @@
 package eu.unareil.bo;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Produit {
-    protected long id;
     protected long refProd;
     protected String libelle;
     protected String marque;
@@ -29,14 +26,6 @@ public class Produit {
         this.setMarque(marque);
         this.setPrixUnitaire(prixUnitaire);
         this.setQteStock(qteStock);
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public long getRefProd() {
