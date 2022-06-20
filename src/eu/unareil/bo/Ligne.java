@@ -36,10 +36,9 @@ public class Ligne {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Ligne{");
-        sb.append("quantite=").append(getQuantite());
-        sb.append(", produits=").append(getProduit());
+        sb.append("quantite=").append(quantite);
+        sb.append(", produit=").append(produit);
         sb.append('}');
         return sb.toString();
     }
-
 }

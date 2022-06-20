@@ -5,6 +5,10 @@ import java.time.LocalDate;
 public class Pain extends ProduitPerissable{
     private int poids;
 
+    public Pain() {
+        super();
+    }
+
     public Pain(LocalDate dateLimiteConso, int poids) {
         super(dateLimiteConso);
         this.poids = poids;
@@ -30,14 +34,9 @@ public class Pain extends ProduitPerissable{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Pain{");
-        sb.append(", id=").append(getId());
-        sb.append(", refProd=").append(getRefProd());
-        sb.append(", libelle='").append(getLibelle()).append('\'');
-        sb.append(", marque='").append(getMarque()).append('\'');
-        sb.append(", prixUnitaire=").append(getPrixUnitaire());
-        sb.append(", qteStock=").append(getQteStock());
-        sb.append("poids=").append(getPoids());
+        final StringBuilder sb = new StringBuilder(super.toString());
+        sb.append("Pain{");
+        sb.append("poids=").append(getPoids()).append("g");
         sb.append('}');
         return sb.toString();
     }

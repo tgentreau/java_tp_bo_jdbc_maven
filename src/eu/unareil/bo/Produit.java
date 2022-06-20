@@ -1,5 +1,6 @@
 package eu.unareil.bo;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -80,14 +81,16 @@ public class Produit {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Produit{");
-        sb.append("id=").append(getId());
-        sb.append(", refProd=").append(getRefProd());
-        sb.append(", libelle='").append(getLibelle()).append('\'');
-        sb.append(", marque='").append(getLibelle()).append('\'');
-        sb.append(", prixUnitaire=").append(getPrixUnitaire());
-        sb.append(", qteStock=").append(getQteStock());
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder();
+        DecimalFormat df = new DecimalFormat("#0.00");
+        sb.append(this.getClass().getSimpleName()).append(" [");
+        sb.append("libelle=").append(libelle);
+        if (refProd != 0) {
+            sb.append(", refProd=").append(refProd).append(", ");
+        }
+        sb.append(", marque=").append(marque);
+        sb.append(", prixUnitaire=").append(df.format(prixUnitaire)).append(" euro").append((prixUnitaire > 1) ? "s" : "");
+        sb.append(", qteStock=").append(qteStock).append(" ");
         return sb.toString();
     }
 }

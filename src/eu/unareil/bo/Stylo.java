@@ -34,15 +34,10 @@ public class Stylo extends Produit{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Stylo{");
-        sb.append("id=").append(getId());
-        sb.append(", refProd=").append(getRefProd());
-        sb.append(", libelle='").append(getLibelle()).append('\'');
-        sb.append(", marque='").append(getMarque()).append('\'');
-        sb.append(", prixUnitaire=").append(getPrixUnitaire());
-        sb.append(", qteStock=").append(getQteStock());
-        sb.append(", couleur='").append(getCouleur()).append('\'');
-        sb.append(", typeMine='").append(getTypeMine()).append('\'');
+        final StringBuilder sb = new StringBuilder(super.toString());
+        sb.append("Stylo {").append('\'');
+        sb.append("couleur='").append(couleur).append('\'');
+        sb.append(", typeMine='").append(typeMine).append('\'');
         sb.append('}');
         return sb.toString();
     }
