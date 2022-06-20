@@ -5,13 +5,18 @@ import java.time.LocalDate;
 public class Pain extends ProduitPerissable{
     private int poids;
 
-    public Pain(long refProd, String libelle, String marque, float prixUnitaire, long qteStock, LocalDate dateLimiteConso, int poids) {
-        super(refProd, libelle, marque, prixUnitaire, qteStock, dateLimiteConso);
+    public Pain(LocalDate dateLimiteConso, int poids) {
+        super(dateLimiteConso);
+        this.poids = poids;
+    }
+
+    public Pain(long refProd, String marque, String libelle, int poids, float prixUnitaire, long qteStock) {
+        super(refProd, LocalDate.now().plusDays(2), marque, libelle, qteStock, prixUnitaire);
         this.setPoids(poids);
     }
 
-    public Pain(String libelle, String marque, float prixUnitaire, long qteStock, LocalDate dateLimiteConso, int poids) {
-        super(libelle, marque, prixUnitaire, qteStock, dateLimiteConso);
+    public Pain(String marque, String libelle, int poids, long qteStock, float prixUnitaire) {
+        super(LocalDate.now().plusDays(2), marque, libelle, qteStock, prixUnitaire);
         this.setPoids(poids);
     }
 

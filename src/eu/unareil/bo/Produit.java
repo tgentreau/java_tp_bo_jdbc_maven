@@ -11,6 +11,10 @@ public class Produit {
     protected float prixUnitaire;
     protected long qteStock;
 
+    public Produit() {
+        super();
+    }
+
     public Produit(long refProd, String marque, String libelle, long qteStock, float prixUnitaire) {
         this.setRefProd(refProd);
         this.setLibelle(libelle);
