@@ -16,8 +16,8 @@ public class Glace extends ProduitPerissable{
         this.setTemperatureConservation(temperatureConservation);
     }
 
-    public Glace(LocalDate dateLimiteConso, String marque, String libelle, long qteStock, float prixUnitaire, String parfum, int temperatureConservation) {
-        super(dateLimiteConso, marque, libelle, qteStock, prixUnitaire);
+    public Glace(long refProd, LocalDate dateLimiteConso, String marque, String libelle, long qteStock, float prixUnitaire, String parfum, int temperatureConservation) {
+        super(refProd, dateLimiteConso, marque, libelle, qteStock, prixUnitaire);
         this.setParfum(parfum);
         this.setTemperatureConservation(temperatureConservation);
     }

@@ -4,21 +4,11 @@ import java.util.List;
 
 public class CartePostale extends Produit{
     private TypeCartePostale type;
+    private String typeCP;
     private List<Auteur> lesAuteurs;
 
     public CartePostale() {
         super();
-    }
-
-    public CartePostale(TypeCartePostale type, List<Auteur> lesAuteurs) {
-        this.setType(type);
-        this.lesAuteurs = lesAuteurs;
-    }
-
-    public CartePostale(long refProd, String marque, String libelle, long qteStock, float prixUnitaire, List<Auteur> lesAuteurs, TypeCartePostale type) {
-        super(refProd, libelle, marque, qteStock, prixUnitaire);
-        this.setType(type);
-        this.lesAuteurs = lesAuteurs;
     }
 
     public CartePostale(String marque, String libelle, long qteStock, float prixUnitaire, List<Auteur> lesAuteurs, TypeCartePostale type) {
@@ -27,12 +17,25 @@ public class CartePostale extends Produit{
         this.lesAuteurs = lesAuteurs;
     }
 
+    public CartePostale(long refProd, String marque, String libelle, long qteStock, float prixUnitaire, String typeCP) {
+        super(refProd, libelle, marque, qteStock, prixUnitaire);
+        this.setTypeCP(typeCP);
+    }
+
     public TypeCartePostale getType() {
         return type;
     }
 
     public void setType(TypeCartePostale type) {
         this.type = type;
+    }
+
+    public String getTypeCP() {
+        return typeCP;
+    }
+
+    public void setTypeCP(String typeCP) {
+        this.typeCP = typeCP;
     }
 
     @Override
